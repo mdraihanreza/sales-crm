@@ -1,0 +1,39 @@
+.login-page {
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.16), transparent 30%),
+    linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%) !important;
+}
+
+.login-box {
+  width: min(440px, calc(100% - 2rem));
+}
+
+.login-logo {
+  margin-bottom: 1.25rem;
+}
+
+.login-logo img {
+  width: 168px !important;
+  max-width: 168px !important;
+  height: auto !important;
+  padding: 0.75rem;
+  border-radius: 28px;
+  background: #020617;
+  box-shadow: 0 24px 50px rgba(15, 23, 42, 0.18);
+}
+
+.brand-link .brand-image {
+  width: 38px !important;
+  height: 38px !important;
+  max-height: 38px !important;
+  object-fit: contain;
+  padding: 0.25rem;
+  border-radius: 12px;
+  background: #020617;
+}
+
+.login-card-body,
+.register-card-body {
+  border-radius: 24px;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+}
