@@ -3,6 +3,7 @@ from django.urls import include, path
 from django.http import JsonResponse
 from django.conf import settings
 from django.conf.urls.static import static
+from django.views.generic import RedirectView
 
 
 def root_view(request):
@@ -18,6 +19,7 @@ def root_view(request):
 
 urlpatterns = [
     path("", root_view, name="root"),
+    path("accounts/profile/", RedirectView.as_view(url="/admin/", permanent=False), name="accounts-profile-redirect"),
     path("admin/", admin.site.urls),
     path("api/", include("users.urls")),
     path("api/", include("bids.urls")),
